@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit';
-import {todoSlice} from '../Screens/Todos/TodoSlice';
+import {todoSlice} from '../Screens/Todos/Todoslice/TodoSlice';
 import logger from 'redux-logger';
 
 const store = configureStore({

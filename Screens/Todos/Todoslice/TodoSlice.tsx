@@ -1,11 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {RootState} from '../../redux/store';
-import {TodoModel} from './Model/TodoModel';
-
-export interface TodoState {
-  todos: Array<TodoModel>;
-  completed: number;
-}
+import {TodoModel} from '../Models/TodoModel';
+import {TodoState} from '../Models/TodoState';
+import {isCompleted} from './TodoSelectors';
 
 const initialState: TodoState = {
   todos: [
@@ -27,17 +23,16 @@ export const todoSlice = createSlice({
   name: 'todod',
   initialState,
   reducers: {
-    add: (state, action: PayloadAction<any>) => {
+    addTodo: (state, action: PayloadAction<any>) => {
       state.todos.push(action.payload);
       state.completed = state.todos.filter(isCompleted).length;
     },
-    remove: (state, action: PayloadAction<number>) => {
+    removeTodo: (state, action: PayloadAction<number>) => {
       state.todos = state.todos.filter(item => item.id !== action.payload);
       state.completed = state.todos.filter(isCompleted).length;
     },
-    complete: (state, action: PayloadAction<UserCompleteAction>) => {
-
-    state.todos = state.todos.map(item => {
+    completeTodo: (state, action: PayloadAction<UserCompleteAction>) => {
+      state.todos = state.todos.map(item => {
         if (item.id === action.payload.id) {
           item.completed = action.payload.value;
         }
@@ -51,14 +46,7 @@ export const todoSlice = createSlice({
   },
 });
 
-export const {add, remove, complete} = todoSlice.actions;
-
-export const getTodos = (state: RootState): TodoModel[] =>
-  state.totosReducer.todos;
-export const getDoneTodos = (state: RootState): TodoModel[] =>
-  state.totosReducer.todos.filter(isCompleted);
-
-const isCompleted = (item: TodoModel) => item.completed === true;
+export const {addTodo, removeTodo, completeTodo} = todoSlice.actions;
 
 export type UserCompleteAction = {
   id: number;

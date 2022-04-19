@@ -3,12 +3,13 @@ import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Provider} from 'react-redux';
 import store from './redux/store';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {TodoList} from './Screens/Todos/TodoList';
+import {TodoList} from './Screens/Todos/TodoList/TodoList';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
+    flex: 2,
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
