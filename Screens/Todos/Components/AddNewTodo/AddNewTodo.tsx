@@ -1,31 +1,28 @@
 import React, {FunctionComponent, useEffect, useState} from 'react';
 import {View, TextInput, TouchableOpacity, Text} from 'react-native';
 import {TodoModel} from '../../Models/TodoModel';
-import {useDispatch, useSelector} from 'react-redux';
-import {addTodo} from '../../Todoslice/TodoSlice';
+import {useDispatch} from 'react-redux';
+import {addTodo, editTodo} from '../../Todoslice/TodoSlice';
 import CheckBox from '@react-native-community/checkbox';
-import {RootState} from '../../../../redux/store';
-import {getTodos} from '../../Todoslice/TodoSelectors';
+import uniqid from 'uniqid';
 import {styles} from './styles';
+import * as Strings from './Strings';
 
 export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
   item,
+  closeEditTask,
 }): JSX.Element => {
   const [isCompleted, setIsCompleted] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [hasError, setHasErrors] = useState(false);
   const [todoName, setTodoName] = useState('');
   const [todoError, setTodoError] = useState('');
-
   const dispatch = useDispatch();
-  const todos = useSelector<RootState, TodoModel[]>(getTodos);
 
   useEffect(() => {
     if (item !== null && item !== undefined) {
       setIsEdit(true);
-      setIsCompleted(item.completed);
       setTodoName(item.title);
-      item.isNew = false;
     } else {
       setIsEdit(false);
       setIsCompleted(false);
@@ -37,12 +34,18 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
     if (todoName !== '') {
       setHasErrors(false);
       setTodoError('');
-      dispatch(
-        addTodo(new TodoModel(todos.length + 1, todoName, isCompleted, true)),
-      );
+      if (isEdit) {
+        dispatch(
+          editTodo(new TodoModel(item!.id, todoName, isCompleted, true)),
+        );
+
+        closeEditTask && closeEditTask();
+      } else {
+        dispatch(addTodo(new TodoModel(uniqid(), todoName, isCompleted, true)));
+      }
     } else {
       setHasErrors(true);
-      setTodoError('Name of task is mandatory!');
+      setTodoError(Strings.taskError);
     }
   };
 
@@ -52,11 +55,11 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
       setTodoError('');
     } else {
       setHasErrors(true);
-      setTodoError('Name of task is mandatory!');
+      setTodoError(Strings.taskError);
     }
   };
   return (
-    <View style={styles.container}>
+    <View key={item?.id || 111} style={styles.container}>
       {isEdit ? (
         <CheckBox value={isCompleted} onValueChange={setIsCompleted} />
       ) : null}
@@ -64,11 +67,11 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
         <TextInput
           style={[styles.input]}
           value={todoName}
-          placeholder="Enter new task"
+          placeholder={Strings.inputPlaceHolder}
           onChangeText={setTodoName}
           onEndEditing={checkIfErrors}
           onBlur={checkIfErrors}
-          keyboardType="numeric"
+          keyboardType="default"
         />
 
         {hasError && <Text style={styles.errorText}>{todoError}</Text>}
@@ -77,7 +80,9 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
         style={[styles.button, hasError ? styles.inActiveButton : null]}
         onPress={createNewOne}
         disabled={hasError}>
-        <Text style={styles.buttonText}>Add Task</Text>
+        <Text style={styles.buttonText}>
+          {isEdit ? Strings.editTask : Strings.addTask}
+        </Text>
       </TouchableOpacity>
     </View>
   );
@@ -85,4 +90,5 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
 
 type AddNewItemProps = {
   item?: TodoModel | null;
+  closeEditTask?: () => void;
 };

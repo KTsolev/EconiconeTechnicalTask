@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
   },
   input: {
     maxHeight: 120,
+    minHeight: 40,
     color: '#888888',
     fontWeight: '600',
     padding: 10,
@@ -46,6 +47,7 @@ export const styles = StyleSheet.create({
     flex: 0.5,
     maxWidth: 184,
     maxHeight: 68,
+    minHeight: 40,
     padding: 10,
     marginHorizontal: 4,
     borderRadius: 6,

@@ -1,11 +1,24 @@
 import {configureStore} from '@reduxjs/toolkit';
 import {todoSlice} from '../Screens/Todos/Todoslice/TodoSlice';
+import {combineReducers} from 'redux';
+import {persistReducer} from 'redux-persist';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import logger from 'redux-logger';
 
+const reducers = combineReducers({
+  totosReducer: todoSlice.reducer,
+});
+
+const persistConfig = {
+  key: 'root',
+  storage: AsyncStorage,
+  whitelist: ['totosReducer'],
+};
+
+const persistedReducer = persistReducer(persistConfig, reducers);
+
 const store = configureStore({
-  reducer: {
-    totosReducer: todoSlice.reducer,
-  },
+  reducer: persistedReducer,
   middleware: [logger],
 });
 

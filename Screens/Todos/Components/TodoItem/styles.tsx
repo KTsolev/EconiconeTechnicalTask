@@ -28,12 +28,11 @@ export const styles = StyleSheet.create({
     borderRadius: 14,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#C8C8C8',
   },
-  buttonText: {
-    width: 20,
-    height: 20,
-    textAlign: 'center',
-    color: '#000',
+  deleteButton: {
+    backgroundColor: '#ff3344',
+  },
+  editButton: {
+    backgroundColor: '#334488',
   },
 });

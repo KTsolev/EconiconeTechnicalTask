@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1650534127198" clover="3.2.0">
+  <project timestamp="1650534127199" name="All files">
+    <metrics statements="29" coveredstatements="26" conditionals="6" coveredconditionals="2" methods="13" coveredmethods="9" elements="48" coveredelements="37" complexity="0" loc="29" ncloc="29" packages="2" files="3" classes="3"/>
+    <package name="Models">
+      <metrics statements="0" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="TodoModel.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Models/TodoModel.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      </file>
+    </package>
+    <package name="Todoslice">
+      <metrics statements="29" coveredstatements="26" conditionals="4" coveredconditionals="2" methods="12" coveredmethods="8"/>
+      <file name="TodoSelectors.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Todoslice/TodoSelectors.tsx">
+        <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="TodoSlice.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Todoslice/TodoSlice.tsx">
+        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="50" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -5,16 +5,21 @@ import {isCompleted} from './TodoSelectors';
 
 const initialState: TodoState = {
   todos: [
-    new TodoModel(1, 'Fix ability to display all tasks', false, false),
+    new TodoModel('l28uy38p', 'Fix ability to display all tasks', false, false),
     new TodoModel(
-      2,
+      'l28uy38l',
       'Fix a layout, checkbox should be listed in a column',
       false,
       false,
     ),
-    new TodoModel(3, 'Fix ability to togle a task', true, false),
-    new TodoModel(4, 'Fix ability to delete task', true, false),
-    new TodoModel(5, 'Fix ability to count completed task', true, false),
+    new TodoModel('l28uy38o', 'Fix ability to togle a task', true, false),
+    new TodoModel('l28uy36m', 'Fix ability to delete task', true, false),
+    new TodoModel(
+      'l28uy39d',
+      'Fix ability to count completed task',
+      true,
+      false,
+    ),
   ],
   completed: 3,
 };
@@ -27,7 +32,7 @@ export const todoSlice = createSlice({
       state.todos.push(action.payload);
       state.completed = state.todos.filter(isCompleted).length;
     },
-    removeTodo: (state, action: PayloadAction<number>) => {
+    removeTodo: (state, action: PayloadAction<string>) => {
       state.todos = state.todos.filter(item => item.id !== action.payload);
       state.completed = state.todos.filter(isCompleted).length;
     },
@@ -40,15 +45,21 @@ export const todoSlice = createSlice({
       });
       state.completed = state.todos.filter(isCompleted).length;
     },
-    // edit: (state, action: PayloadAction<number>) => {
-    //     state.value -= 1;
-    // },
+    editTodo: (state, action: PayloadAction<any>) => {
+      state.todos = state.todos.map(item => {
+        if (item.id === action.payload.id) {
+          item = {...item, ...action.payload};
+        }
+        return item;
+      });
+      state.completed = state.todos.filter(isCompleted).length;
+    },
   },
 });
 
-export const {addTodo, removeTodo, completeTodo} = todoSlice.actions;
+export const {addTodo, removeTodo, completeTodo, editTodo} = todoSlice.actions;
 
 export type UserCompleteAction = {
-  id: number;
+  id: string;
   value: boolean;
 };

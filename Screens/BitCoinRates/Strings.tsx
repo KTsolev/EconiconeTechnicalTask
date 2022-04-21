@@ -1,0 +1,11 @@
+export const connectedToWS = 'Connected to the server';
+export const disconectedToWS = 'Disconnected. Check internet or server.';
+export const loadingState = 'Loading...';
+export const type = 'Type:';
+export const tradeId = 'TradeId:';
+export const makerOrderId = 'MakerOrderId:';
+export const takerOrderId = 'TakerOrderId:';
+export const side = 'Side:';
+export const size = 'Size:';
+export const sequence = 'Sequence:';
+export const date = 'Date: ';
