@@ -1,49 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1650534127198" clover="3.2.0">
-  <project timestamp="1650534127199" name="All files">
-    <metrics statements="29" coveredstatements="26" conditionals="6" coveredconditionals="2" methods="13" coveredmethods="9" elements="48" coveredelements="37" complexity="0" loc="29" ncloc="29" packages="2" files="3" classes="3"/>
-    <package name="Models">
+<coverage generated="1650619849360" clover="3.2.0">
+  <project timestamp="1650619849360" name="All files">
+    <metrics statements="145" coveredstatements="137" conditionals="45" coveredconditionals="39" methods="42" coveredmethods="36" elements="232" coveredelements="212" complexity="0" loc="145" ncloc="145" packages="8" files="17" classes="17"/>
+    <package name="BitCoinRates">
+      <metrics statements="32" coveredstatements="24" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="3"/>
+      <file name="BitCoinRates.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/BitCoinRates/BitCoinRates.tsx">
+        <metrics statements="20" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="3"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+      </file>
+      <file name="Strings.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/BitCoinRates/Strings.tsx">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/BitCoinRates/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="BitCoinRates.Models">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="BitCoinReateModle.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/BitCoinRates/Models/BitCoinReateModle.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="Todos.Components.AddNewTodo">
+      <metrics statements="36" coveredstatements="36" conditionals="22" coveredconditionals="22" methods="4" coveredmethods="4"/>
+      <file name="AddNewTodo.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/AddNewTodo/AddNewTodo.tsx">
+        <metrics statements="31" coveredstatements="31" conditionals="22" coveredconditionals="22" methods="4" coveredmethods="4"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="15" count="47" type="stmt"/>
+        <line num="16" count="47" type="stmt"/>
+        <line num="17" count="47" type="stmt"/>
+        <line num="18" count="47" type="stmt"/>
+        <line num="19" count="47" type="stmt"/>
+        <line num="20" count="47" type="stmt"/>
+        <line num="22" count="47" type="stmt"/>
+        <line num="23" count="20" type="cond" truecount="4" falsecount="0"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="28" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="33" count="47" type="stmt"/>
+        <line num="34" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="42" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="52" count="47" type="stmt"/>
+        <line num="53" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="61" count="47" type="stmt"/>
+      </file>
+      <file name="Strings.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/AddNewTodo/Strings.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/AddNewTodo/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="Todos.Components.Separator">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Separator.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/Separator/Separator.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="39" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/Separator/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="Todos.Components.TodoItem">
+      <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5"/>
+      <file name="TodoItem.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/TodoItem/TodoItem.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="19" count="37" type="stmt"/>
+        <line num="21" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="37" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="33" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Components/TodoItem/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="Todos.Models">
       <metrics statements="0" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="TodoModel.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Models/TodoModel.tsx">
         <metrics statements="0" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
       </file>
     </package>
-    <package name="Todoslice">
-      <metrics statements="29" coveredstatements="26" conditionals="4" coveredconditionals="2" methods="12" coveredmethods="8"/>
-      <file name="TodoSelectors.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Todoslice/TodoSelectors.tsx">
-        <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
+    <package name="Todos.TodoList">
+      <metrics statements="37" coveredstatements="37" conditionals="3" coveredconditionals="3" methods="10" coveredmethods="10"/>
+      <file name="Strings.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/TodoList/Strings.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
-      <file name="TodoSlice.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Todoslice/TodoSlice.tsx">
-        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="7"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+      <file name="TodoList.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/TodoList/TodoList.tsx">
+        <metrics statements="30" coveredstatements="30" conditionals="3" coveredconditionals="3" methods="10" coveredmethods="10"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="7" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="53" count="7" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="86" count="30" type="stmt"/>
+        <line num="94" count="24" type="stmt"/>
+      </file>
+      <file name="style.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/TodoList/style.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Todos.Todoslice">
+      <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="2" methods="12" coveredmethods="12"/>
+      <file name="TodoSelectors.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Todoslice/TodoSelectors.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+      </file>
+      <file name="TodoSlice.tsx" path="/Users/ktsolev/Desktop/TodoApp/Screens/Todos/Todoslice/TodoSlice.tsx">
+        <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="42" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="51" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="62" count="2" type="stmt"/>
+        <line num="60" count="5" type="stmt"/>
       </file>
     </package>
   </project>

@@ -6,13 +6,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import logger from 'redux-logger';
 
 const reducers = combineReducers({
-  totosReducer: todoSlice.reducer,
+  todosReducer: todoSlice.reducer,
 });
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['totosReducer'],
+  whitelist: ['todosReducer'],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);

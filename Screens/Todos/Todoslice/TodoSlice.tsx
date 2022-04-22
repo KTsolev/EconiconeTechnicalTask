@@ -25,7 +25,7 @@ const initialState: TodoState = {
 };
 
 export const todoSlice = createSlice({
-  name: 'todod',
+  name: 'todos',
   initialState,
   reducers: {
     addTodo: (state, action: PayloadAction<any>) => {

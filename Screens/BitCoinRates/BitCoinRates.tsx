@@ -40,6 +40,7 @@ export const BitCoinRates: FunctionComponent<
         ),
       );
     };
+    return () => ws.close();
   }, []);
 
   const submitMessage = () => {
@@ -54,6 +55,7 @@ export const BitCoinRates: FunctionComponent<
   return (
     <View style={styles.container}>
       <Text
+        testID="serverStatus"
         style={[
           styles.text,
           serverState === Strings.connectedToWS ? styles.success : styles.error,

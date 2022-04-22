@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>18/18</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -128,17 +128,12 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -151,7 +146,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -167,9 +170,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -178,10 +178,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -191,7 +187,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -204,38 +200,40 @@ import {isCompleted} from './TodoSelectors';
 &nbsp;
 const initialState: TodoState = {
   todos: [
-    new TodoModel(1, 'Fix ability to display all tasks', false, false),
+    new TodoModel('l28uy38p', 'Fix ability to display all tasks', false, false),
     new TodoModel(
-      2,
+      'l28uy38l',
       'Fix a layout, checkbox should be listed in a column',
       false,
       false,
     ),
-    new TodoModel(3, 'Fix ability to togle a task', true, false),
-    new TodoModel(4, 'Fix ability to delete task', true, false),
-    new TodoModel(5, 'Fix ability to count completed task', true, false),
+    new TodoModel('l28uy38o', 'Fix ability to togle a task', true, false),
+    new TodoModel('l28uy36m', 'Fix ability to delete task', true, false),
+    new TodoModel(
+      'l28uy39d',
+      'Fix ability to count completed task',
+      true,
+      false,
+    ),
   ],
   completed: 3,
 };
 &nbsp;
 export const todoSlice = createSlice({
-  name: 'todod',
+  name: 'todos',
   initialState,
   reducers: {
     addTodo: (state, action: PayloadAction&lt;any&gt;) =&gt; {
       state.todos.push(action.payload);
       state.completed = state.todos.filter(isCompleted).length;
     },
-    removeTodo: (state, action: PayloadAction&lt;number&gt;) =&gt; {
+    removeTodo: (state, action: PayloadAction&lt;string&gt;) =&gt; {
       state.todos = state.todos.filter(item =&gt; item.id !== action.payload);
       state.completed = state.todos.filter(isCompleted).length;
     },
     completeTodo: (state, action: PayloadAction&lt;UserCompleteAction&gt;) =&gt; {
       state.todos = state.todos.map(item =&gt; {
-        console.log('===in complete===');
         <span class="missing-if-branch" title="else path not taken" >E</span>if (item.id === action.payload.id) {
-        console.log('===in complete if===');
-&nbsp;
           item.completed = action.payload.value;
         }
         return item;
@@ -244,11 +242,7 @@ export const todoSlice = createSlice({
     },
     editTodo: (state, action: PayloadAction&lt;any&gt;) =&gt; {
       state.todos = state.todos.map(item =&gt; {
-        console.log('===in edit===');
-&nbsp;
         <span class="missing-if-branch" title="else path not taken" >E</span>if (item.id === action.payload.id) {
-        console.log('===in edit if===');
-&nbsp;
           item = {...item, ...action.payload};
         }
         return item;
@@ -261,7 +255,7 @@ export const todoSlice = createSlice({
 export const {addTodo, removeTodo, completeTodo, editTodo} = todoSlice.actions;
 &nbsp;
 export type UserCompleteAction = {
-  id: number;
+  id: string;
   value: boolean;
 };
 &nbsp;</pre></td></tr></table></pre>
@@ -271,7 +265,7 @@ export type UserCompleteAction = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Thu Apr 21 2022 12:42:07 GMT+0300 (Eastern European Summer Time)
+                at Fri Apr 22 2022 11:37:54 GMT+0300 (Eastern European Summer Time)
             </div>
         <script src="../prettify.js"></script>
         <script>

@@ -29,19 +29,25 @@ export const TodoItem: FunctionComponent<TodoItemProps> = ({
   if (!isReadOnly) {
     return (
       <View style={styles.container}>
-        <CheckBox value={item.completed} onValueChange={completeItem} />
+        <CheckBox
+          testID="complete"
+          value={item.completed}
+          onValueChange={completeItem}
+        />
         <Text style={[styles.text, item.completed ? styles.completed : null]}>
           {item?.title}
         </Text>
         <TouchableOpacity
+          testID="edit"
           style={[styles.button, styles.editButton]}
-          onPress={deleteItem}>
-          <FontAwesomeIcon icon={faXmark} color="#fff" />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.button, styles.deleteButton]}
           onPress={() => toggleEditTask(index, !isReadOnly)}>
           <FontAwesomeIcon icon={faPencil} color="#fff" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          testID="delete"
+          style={[styles.button, styles.deleteButton]}
+          onPress={deleteItem}>
+          <FontAwesomeIcon icon={faXmark} color="#fff" />
         </TouchableOpacity>
       </View>
     );

@@ -29,6 +29,7 @@ export const TodoList = (): JSX.Element => {
   }, [todos]);
 
   const toggleEditTask = (index: number, value: boolean): void => {
+    console.log('in toggel edit from list');
     editTodos[index] = value;
     editTodos[prevIndex] = false;
     setPrevIndex(index);
@@ -55,16 +56,19 @@ export const TodoList = (): JSX.Element => {
         <View style={styles.filterContainer}>
           <TouchableOpacity
             style={styles.button}
+            testID="done"
             onPress={() => filterBy('done')}>
             <Text style={styles.buttonText}>{Strings.done}</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
+            testID="not-done"
             onPress={() => filterBy('not-done')}>
             <Text style={styles.buttonText}>{Strings.notDone}</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
+            testID="all"
             onPress={() => filterBy('all')}>
             <Text style={styles.buttonText}>{Strings.all}</Text>
           </TouchableOpacity>

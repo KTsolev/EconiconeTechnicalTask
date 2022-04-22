@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNewItem tests should render component 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#c6c6c6c6",
+      "height": 2,
+      "marginVertical": 8,
+      "width": "100%",
+    }
+  }
+/>
+`;

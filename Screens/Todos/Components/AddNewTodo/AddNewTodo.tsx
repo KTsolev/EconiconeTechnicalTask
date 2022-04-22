@@ -61,12 +61,17 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
   return (
     <View key={item?.id || 111} style={styles.container}>
       {isEdit ? (
-        <CheckBox value={isCompleted} onValueChange={setIsCompleted} />
+        <CheckBox
+          testID="completeEdit"
+          value={isCompleted}
+          onValueChange={setIsCompleted}
+        />
       ) : null}
       <View style={styles.inputHolder}>
         <TextInput
           style={[styles.input]}
           value={todoName}
+          testID="input"
           placeholder={Strings.inputPlaceHolder}
           onChangeText={setTodoName}
           onEndEditing={checkIfErrors}
@@ -79,6 +84,7 @@ export const AddNewItem: FunctionComponent<AddNewItemProps> = ({
       <TouchableOpacity
         style={[styles.button, hasError ? styles.inActiveButton : null]}
         onPress={createNewOne}
+        testID="createButton"
         disabled={hasError}>
         <Text style={styles.buttonText}>
           {isEdit ? Strings.editTask : Strings.addTask}

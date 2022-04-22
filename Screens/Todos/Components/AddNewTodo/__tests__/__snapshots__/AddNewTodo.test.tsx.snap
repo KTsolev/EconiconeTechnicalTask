@@ -1,0 +1,1219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNewItem edit mode tests should handle add new after correct user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    accessibilityRole="checkbox"
+    accessibilityState={
+      Object {
+        "checked": false,
+        "disabled": false,
+      }
+    }
+    accessibilityValue={
+      Object {
+        "text": "off",
+      }
+    }
+    accessible={true}
+    pointerEvents="auto"
+    testID="completeEdit"
+  >
+    <RNCCheckbox
+      forwardedRef={null}
+      onValueChange={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "height": 32,
+            "width": 32,
+          },
+          undefined,
+        ]
+      }
+      value={false}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value="sample task 1"
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Edit Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem edit mode tests should handle error after incorrect user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    accessibilityRole="checkbox"
+    accessibilityState={
+      Object {
+        "checked": false,
+        "disabled": false,
+      }
+    }
+    accessibilityValue={
+      Object {
+        "text": "off",
+      }
+    }
+    accessible={true}
+    pointerEvents="auto"
+    testID="completeEdit"
+  >
+    <RNCCheckbox
+      forwardedRef={null}
+      onValueChange={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "height": 32,
+            "width": 32,
+          },
+          undefined,
+        ]
+      }
+      value={false}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#ff2200",
+          "fontSize": 12,
+          "left": 45,
+          "position": "absolute",
+          "top": 44,
+        }
+      }
+    >
+      Name of task is mandatory!
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#c8c8c8",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Edit Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem edit mode tests should handle user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    accessibilityRole="checkbox"
+    accessibilityState={
+      Object {
+        "checked": false,
+        "disabled": false,
+      }
+    }
+    accessibilityValue={
+      Object {
+        "text": "off",
+      }
+    }
+    accessible={true}
+    pointerEvents="auto"
+    testID="completeEdit"
+  >
+    <RNCCheckbox
+      forwardedRef={null}
+      onValueChange={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "height": 32,
+            "width": 32,
+          },
+          undefined,
+        ]
+      }
+      value={false}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value="sampleTask4"
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Edit Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem edit mode tests should render component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value=""
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should handle add new after correct user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value="sample task 1"
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should handle check for errors after incorrect user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#ff2200",
+          "fontSize": 12,
+          "left": 45,
+          "position": "absolute",
+          "top": 44,
+        }
+      }
+    >
+      Name of task is mandatory!
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#c8c8c8",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should handle check for errors after incorrect user input and then correct is given 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value="samplee task 2"
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should handle error after incorrect user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#ff2200",
+          "fontSize": 12,
+          "left": 45,
+          "position": "absolute",
+          "top": 44,
+        }
+      }
+    >
+      Name of task is mandatory!
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#c8c8c8",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should handle user input 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value="sampleTask4"
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should remove error due to incorrect user input, after correct one is given 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value="sampletask22"
+    />
+    <Text
+      style={
+        Object {
+          "color": "#ff2200",
+          "fontSize": 12,
+          "left": 45,
+          "position": "absolute",
+          "top": 44,
+        }
+      }
+    >
+      Name of task is mandatory!
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#c8c8c8",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AddNewItem tests should render component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 4,
+      "paddingHorizontal": 10,
+      "paddingVertical": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "#888888",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "flex": 0.82,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEndEditing={[Function]}
+      placeholder="Enter new task"
+      style={
+        Array [
+          Object {
+            "color": "#888888",
+            "fontWeight": "600",
+            "maxHeight": 120,
+            "minHeight": 40,
+            "padding": 10,
+          },
+        ]
+      }
+      testID="input"
+      value=""
+    />
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1c90ff",
+        "borderRadius": 6,
+        "flex": 0.5,
+        "justifyContent": "center",
+        "marginHorizontal": 4,
+        "maxHeight": 68,
+        "maxWidth": 184,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="createButton"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
+        }
+      }
+    >
+      Add Task
+    </Text>
+  </View>
+</View>
+`;
